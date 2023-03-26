@@ -6,11 +6,12 @@ import OrdersScreen from '../screens/OrdersScreen';
 import { useNavigation } from '@react-navigation/native';
 import { Icon } from "@rneui/themed";
 
+
 export type TabStackParamList = {
   Customers: undefined;
   Orders: undefined;
 };
- 
+
 const Tab = createBottomTabNavigator<TabStackParamList>();
 
 const TabNavigator = () => {
@@ -31,10 +32,18 @@ const TabNavigator = () => {
             return (
               <Icon
                 name="users"
-                type:"entypo"
+                type="Entypo"
                 color={focused ? "red" : "black"}
               />
             );
+          }else if (route.name === 'Orders') {
+            return (
+              <Icon
+              name="box"
+              type="Entypo"
+              color={focused ? "red" : "black"}
+            />
+            )
           }
         }
     })}>
