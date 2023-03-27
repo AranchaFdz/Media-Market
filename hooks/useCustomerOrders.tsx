@@ -29,6 +29,6 @@ function useCustomerOrders(userId: string) {
   }, [data, userId]);
 
   return { loading, error, orders };
-}
+};
 
-export default useCustomerOrders
+export default useCustomerOrders:
