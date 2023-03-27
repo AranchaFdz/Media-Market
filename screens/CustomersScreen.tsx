@@ -44,11 +44,13 @@ const CustomersScreen = () => {
         containerStyle={tw("bg-white pt-5 pb-0 px-5")}
       />
 
-      {data?.getCustomers.map(
-        ({ name: ID, value: { email, name } }: CustomerResponse) => (
-          <CustomerCard key={ID} email={email} name={name} userId={ID} />
+      {data?.getCustomers
+        ?.filter((customer: CustomerList) => 
+          customer.value.name.includes(input)
         )
-      )}
+        .map(({ name: ID, value: { email, name } }: CustomerResponse) => (
+          <CustomerCard key={ID} email={email} name={name} userId={ID} />
+        ))}
     </ScrollView>
   );
 };
