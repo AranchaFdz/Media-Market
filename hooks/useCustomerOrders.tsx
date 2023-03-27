@@ -31,4 +31,4 @@ function useCustomerOrders(userId: string) {
   return { loading, error, orders };
 }
 
-export default useCustomerOrders
+export default useCustomerOrders;
