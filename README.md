@@ -5,7 +5,7 @@
 1. [Technologies](#Technologies)
 2. [Installation](#Installation)
 3. [Views](#Views)
-4. [User Stories](#User Stories)
+4. [User Stories](#User-Stories)
 5. [Author](#Author)
 
 
