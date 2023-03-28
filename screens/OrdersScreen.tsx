@@ -8,6 +8,7 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { useTailwind } from 'tailwind-rn/dist';
 import useOrders from '../hooks/useOrders';
 import { Button, Image } from '@rneui/themed';
+import OrderCard from '../components/OrderCard';
 
 export type OrderScreenNavigationProp = CompositeNavigationProp<
   BottomTabNavigationProp<TabStackParamList, "Orders">,

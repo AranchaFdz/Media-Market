@@ -52,6 +52,14 @@
   margin-top: -0.75rem
 }
 
+.ml-2 {
+  margin-left: 0.5rem
+}
+
+.-mt-2 {
+  margin-top: -0.5rem
+}
+
 .block {
   display: block
 }
@@ -201,4 +209,9 @@
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity))
 }
