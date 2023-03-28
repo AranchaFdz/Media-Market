@@ -4,6 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import RootNavigator from './navigator/RootNavigator';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
+
 const client = new ApolloClient({
   uri: 'https://dashboard.stepzen.com/explorer?endpoint=api%2Fmedia-market-fake',
   cache: new InMemoryCache(),
