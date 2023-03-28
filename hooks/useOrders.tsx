@@ -21,10 +21,10 @@ const useOrders = () => {
       Lng: value.Lng,
     }));
 
-    setOrders(orders)
-  }, [data])
+    setOrders(orders);
+  }, [data]);
 
   return { loading, error, orders };
 };
 
-export default useOrders 
+export default useOrders; 
