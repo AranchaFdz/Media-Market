@@ -22,7 +22,6 @@ const CustomersScreen = () => {
   const [input, setInput] = useState<string>("");
   const { loading, error, data } = useQuery(GET_CUSTOMERS);
 
-
   useLayoutEffect(() => {
     navigation.setOptions({
       headerShown: false,
@@ -46,13 +45,13 @@ const CustomersScreen = () => {
 
       {data?.getCustomers
         ?.filter((customer: CustomerList) => 
-          customer.value.name.includes(input)
+        customer.value.name.includes(input)
         )
         .map(({ name: ID, value: { email, name } }: CustomerResponse) => (
-          <CustomerCard key={ID} email={email} name={name} userId={ID} />
-        ))}
+        <CustomerCard key={ID} email={email} name={name} userId={ID} />
+      ))}
     </ScrollView>
   );
 };
 
-export default CustomersScreen; 
+export default CustomersScreen;  
